@@ -4,12 +4,6 @@ import { Container, Row, Col, CardColumns } from 'react-bootstrap';
 import PetCard from './PetCard';
 import Pet from './Pet';
 
-var mockedPets = [
-  { id: "1", name: "Stratos", description: "Has a good nose for truffles" },
-  { id: "2", name: "Rallou", description: "A superhero (of the dog world)" },
-  { id: "3", name: "Fluffy", description: "Has opinions about sausages" },
-];
-
 const App: React.FC = () => {
   const [pets, setPets] = useState<Array<Pet>>([]);
   useEffect(() => {
